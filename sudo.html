@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: goldenrod;
+        }
+        h1::before{
+            content: "Hello";
+            color: seagreen;
+            font-size: 40px;
+        }
+        .effect::after{
+            content: "😍";
+            color: sienna;
+        }
+        h1:hover{
+            color: maroon;
+            font-size: 30px;
+            background-color: mediumorchid;
+        }
+        input:hover{
+            font-size: 20px;
+            color: orange;
+        }
+       
+        }
+        a:visited{
+            color: blue;
+        }
+        body {
+  counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
+}
+
+p::before {
+  counter-increment: section;                   /* Increment the value of section counter by 1 */
+  content: "Crush " counter(section) ": ";    /* Display the word 'Section ', the value of
+                                                   section counter, and a colon before the content
+                                                   of each h3 */
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="effect">Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1>Vodro Class</h1>
+    <input name="email" type="text">
+    <br>
+    <input name="password" type="text">
+    <a href="https://www.youtube.com/watch?v=rRJa-i3Z58k"> YouTube</a>
+    <ul>
+       
+        <p>Apa</p>
+        <p>sajjad</p>
+        <p>Tonny</p>
+        <p>Apa</p>
+        <p>sajjad</p>
+        <p>Tonny</p>
+        <p>trisha</p>
+        <p>Sayma</p>
+        <p>Sayma</p>
+    </ul>
+</body>
+</html>
